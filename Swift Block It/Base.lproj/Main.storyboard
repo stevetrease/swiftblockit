@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_Block_It" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CnC-tl-Yd6"/>
+                        <viewControllerLayoutGuide type="bottom" id="xfi-7u-zym"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NiZ-b4-73D">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9sh-il-wo0">
+                                <rect key="frame" x="231" y="110" width="138" height="94"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="elements" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Su-CM-Frf">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="41"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u2Z-Dy-3Jq">
+                                        <rect key="frame" x="13" y="41" width="112" height="53"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9T-jP-jjH">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="53"/>
+                                                <animations/>
+                                                <state key="normal" title="Refresh"/>
+                                                <connections>
+                                                    <action selector="refreshButton:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="U9a-tC-gQo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNH-KP-Vb5">
+                                                <rect key="frame" x="73" y="0.0" width="39" height="53"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Reset"/>
+                                                <connections>
+                                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="RtF-2f-Erk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9sh-il-wo0" firstAttribute="centerX" secondItem="NiZ-b4-73D" secondAttribute="centerX" id="7lr-WI-1rY"/>
+                            <constraint firstItem="9sh-il-wo0" firstAttribute="top" secondItem="CnC-tl-Yd6" secondAttribute="bottom" constant="90" id="fp6-Rj-6CT"/>
+                            <constraint firstItem="xfi-7u-zym" firstAttribute="top" secondItem="9sh-il-wo0" secondAttribute="bottom" constant="396" id="pGL-Em-pjS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="elementsLabel" destination="0Su-CM-Frf" id="rX1-Vw-kho"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="266"/>
+        </scene>
+    </scenes>
+</document>

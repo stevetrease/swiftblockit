@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAAF17851B94761100624A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF17841B94761100624A4C /* AppDelegate.swift */; };
+		AAAF17871B94761100624A4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF17861B94761100624A4C /* ViewController.swift */; };
+		AAAF178A1B94761100624A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAF17881B94761100624A4C /* Main.storyboard */; };
+		AAAF178C1B94761100624A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAF178B1B94761100624A4C /* Assets.xcassets */; };
+		AAAF178F1B94761100624A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAAF178D1B94761100624A4C /* LaunchScreen.storyboard */; };
+		AAAF179D1B94763A00624A4C /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = AAAF179C1B94763A00624A4C /* blockerList.json */; };
+		AAAF179F1B94763A00624A4C /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF179E1B94763A00624A4C /* ActionRequestHandler.swift */; };
+		AAAF17A31B94763A00624A4C /* Swift Block It Content Blocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AAAF179A1B94763A00624A4C /* Swift Block It Content Blocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAAF17A11B94763A00624A4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAAF17791B94761100624A4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAAF17991B94763A00624A4C;
+			remoteInfo = "Swift Block It Content Blocker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AAAF17A71B94763A00624A4C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AAAF17A31B94763A00624A4C /* Swift Block It Content Blocker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AAAF17811B94761100624A4C /* Swift Block It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Block It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAAF17841B94761100624A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAAF17861B94761100624A4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAAF17891B94761100624A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAAF178B1B94761100624A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAAF178E1B94761100624A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAAF17901B94761100624A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAAF179A1B94763A00624A4C /* Swift Block It Content Blocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Swift Block It Content Blocker.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAAF179C1B94763A00624A4C /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		AAAF179E1B94763A00624A4C /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		AAAF17A01B94763A00624A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE0D9D71B976AF700BA9BD5 /* Swift Block It Content Blocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Swift Block It Content Blocker.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAAF177E1B94761100624A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAAF17971B94763A00624A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAAF17781B94761100624A4C = {
+			isa = PBXGroup;
+			children = (
+				AAAF17831B94761100624A4C /* Swift Block It */,
+				AAAF179B1B94763A00624A4C /* Swift Block It Content Blocker */,
+				AAAF17821B94761100624A4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAAF17821B94761100624A4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAAF17811B94761100624A4C /* Swift Block It.app */,
+				AAAF179A1B94763A00624A4C /* Swift Block It Content Blocker.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAAF17831B94761100624A4C /* Swift Block It */ = {
+			isa = PBXGroup;
+			children = (
+				AAAF17841B94761100624A4C /* AppDelegate.swift */,
+				AAAF17861B94761100624A4C /* ViewController.swift */,
+				AAAF17881B94761100624A4C /* Main.storyboard */,
+				AAAF178B1B94761100624A4C /* Assets.xcassets */,
+				AAAF178D1B94761100624A4C /* LaunchScreen.storyboard */,
+				AAAF17901B94761100624A4C /* Info.plist */,
+			);
+			path = "Swift Block It";
+			sourceTree = "<group>";
+		};
+		AAAF179B1B94763A00624A4C /* Swift Block It Content Blocker */ = {
+			isa = PBXGroup;
+			children = (
+				AAE0D9D71B976AF700BA9BD5 /* Swift Block It Content Blocker.entitlements */,
+				AAAF179C1B94763A00624A4C /* blockerList.json */,
+				AAAF179E1B94763A00624A4C /* ActionRequestHandler.swift */,
+				AAAF17A01B94763A00624A4C /* Info.plist */,
+			);
+			path = "Swift Block It Content Blocker";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAAF17801B94761100624A4C /* Swift Block It */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAAF17931B94761100624A4C /* Build configuration list for PBXNativeTarget "Swift Block It" */;
+			buildPhases = (
+				AAAF177D1B94761100624A4C /* Sources */,
+				AAAF177E1B94761100624A4C /* Frameworks */,
+				AAAF177F1B94761100624A4C /* Resources */,
+				AAAF17A71B94763A00624A4C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAAF17A21B94763A00624A4C /* PBXTargetDependency */,
+			);
+			name = "Swift Block It";
+			productName = "Swift Block It";
+			productReference = AAAF17811B94761100624A4C /* Swift Block It.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAAF17991B94763A00624A4C /* Swift Block It Content Blocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAAF17A41B94763A00624A4C /* Build configuration list for PBXNativeTarget "Swift Block It Content Blocker" */;
+			buildPhases = (
+				AAAF17961B94763A00624A4C /* Sources */,
+				AAAF17971B94763A00624A4C /* Frameworks */,
+				AAAF17981B94763A00624A4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift Block It Content Blocker";
+			productName = "Swift Block It Content Blocker";
+			productReference = AAAF179A1B94763A00624A4C /* Swift Block It Content Blocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAAF17791B94761100624A4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Steve Trease";
+				TargetAttributes = {
+					AAAF17801B94761100624A4C = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 22648A4K3P;
+					};
+					AAAF17991B94763A00624A4C = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 22648A4K3P;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = AAAF177C1B94761100624A4C /* Build configuration list for PBXProject "Swift Block It" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAAF17781B94761100624A4C;
+			productRefGroup = AAAF17821B94761100624A4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAAF17801B94761100624A4C /* Swift Block It */,
+				AAAF17991B94763A00624A4C /* Swift Block It Content Blocker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAAF177F1B94761100624A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAAF178F1B94761100624A4C /* LaunchScreen.storyboard in Resources */,
+				AAAF178C1B94761100624A4C /* Assets.xcassets in Resources */,
+				AAAF178A1B94761100624A4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAAF17981B94763A00624A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAAF179D1B94763A00624A4C /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAAF177D1B94761100624A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAAF17871B94761100624A4C /* ViewController.swift in Sources */,
+				AAAF17851B94761100624A4C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAAF17961B94763A00624A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAAF179F1B94763A00624A4C /* ActionRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAAF17A21B94763A00624A4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAAF17991B94763A00624A4C /* Swift Block It Content Blocker */;
+			targetProxy = AAAF17A11B94763A00624A4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAAF17881B94761100624A4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAAF17891B94761100624A4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAAF178D1B94761100624A4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAAF178E1B94761100624A4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAAF17911B94761100624A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAAF17921B94761100624A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAAF17941B94761100624A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Swift Block It/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.trease.Swift-Block-It";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AAAF17951B94761100624A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Swift Block It/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.trease.Swift-Block-It";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AAAF17A51B94763A00624A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "Swift Block It Content Blocker/Swift Block It Content Blocker.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Swift Block It Content Blocker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.trease.Swift-Block-It";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AAAF17A61B94763A00624A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "Swift Block It Content Blocker/Swift Block It Content Blocker.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Swift Block It Content Blocker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.trease.Swift-Block-It";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAAF177C1B94761100624A4C /* Build configuration list for PBXProject "Swift Block It" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAF17911B94761100624A4C /* Debug */,
+				AAAF17921B94761100624A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAAF17931B94761100624A4C /* Build configuration list for PBXNativeTarget "Swift Block It" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAF17941B94761100624A4C /* Debug */,
+				AAAF17951B94761100624A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAAF17A41B94763A00624A4C /* Build configuration list for PBXNativeTarget "Swift Block It Content Blocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAF17A51B94763A00624A4C /* Debug */,
+				AAAF17A61B94763A00624A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAAF17791B94761100624A4C /* Project object */;
+}
