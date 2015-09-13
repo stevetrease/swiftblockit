@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Swift Block It
 //
-//  Created by Steve Trease on 31/08/2015.
+//  Created by Steve Trease on 05/09/2015.
 //  Copyright © 2015 Steve Trease. All rights reserved.
 //
 
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
         let versionNumber: AnyObject? = NSBundle.mainBundle().infoDictionary?["CFBundleVersion"]
         print ("version \(versionNumber!)")
         
@@ -27,6 +28,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         case UIApplicationState.Background:
             print ("didFinishLaunchingWithOptions - background")
         }
+        
+        /*
+        let attachment = NSItemProvider(contentsOfURL: NSBundle.mainBundle().URLForResource("blockerList", withExtension: "json"))!
+        
+        let item = NSExtensionItem()
+        item.attachments = [attachment]
+ 
+        
+        let path = NSBundle.mainBundle().URLForResource("blockerList", withExtension: "json")
+        print (path)
+        
+        do {
+            let attr = try NSFileManager.defaultManager().attributesOfFileSystemForPath("\(path)")
+            let size: AnyObject? = attr[NSFileSize]
+            print ("File size = \(size)")
+        } catch {
+            print (error)
+        }
+        */
+
         return true
     }
 

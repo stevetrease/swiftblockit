@@ -2,18 +2,18 @@
 //  ViewController.swift
 //  Swift Block It
 //
-//  Created by Steve Trease on 31/08/2015.
+//  Created by Steve Trease on 05/09/2015.
 //  Copyright © 2015 Steve Trease. All rights reserved.
 //
 
-// http://stackoverflow.com/questions/31981893/content-blocker-extension-with-a-string-instead-of-a-file
-
-import UIKit
 import SafariServices
+import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var buildVersion: UILabel!
     @IBOutlet weak var elementsLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,39 +21,18 @@ class ViewController: UIViewController {
         print ("ViewDidLoad")
         elementsLabel.text = String(0)
         
-        /*
-        
-        let fileManager = NSFileManager()
-        let fileName = "blockerList.json"
-        //  NSURL *jsonPath = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.net.tenshu.The-Blocker"] URLByAppendingPathComponent:@"safari.json"];
-
-       let jsonPath : NSURL = fileManager.containerURLForSecurityApplicationGroupIdentifier("group.trease.eu")!
-        // .URLByAppendingPathComponent("blockerList.json")
-        print (jsonPath)
-        
-        // fileManager.fileExistsAtPath(<#T##path: String##String#>)
-        
-        print ("filemanager")
-        // print (NSData(contentsOfURL: NSBundle.mainBundle().URLForResource("blockerList", withExtension: "json")!))
-        
-        print ("+++")
-        let files = fileManager.enumeratorAtPath(jsonPath.path!)
-        while let file = files?.nextObject() {
-            print(file)
-        }
-        print ("+++")
-        print (jsonPath.path!)
-        print (fileManager.fileExistsAtPath(jsonPath.path!))
-    
-        */
+        let buildNumber: AnyObject? = NSBundle.mainBundle().infoDictionary?["CFBundleVersion"]
+        print ("build \(buildNumber!)")
+        buildVersion.text = "build \(buildNumber!)"
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        print ("didReceiveMemoryWarning")
         // Dispose of any resources that can be recreated.
     }
 
+    
     // MARK: Actions
     @IBAction func resetButton(sender: AnyObject) {
         print("reset button pressed")
@@ -93,5 +72,6 @@ class ViewController: UIViewController {
         }
         task.resume()
     }
+
 }
 
